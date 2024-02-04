@@ -1,8 +1,14 @@
+use wgpu::Instance;
 use winit::{
     event::*,
     event_loop::{ControlFlow, EventLoop},
     window::WindowBuilder,
 };
+
+struct Position {
+    x: f32,
+    y: f32,
+}
 
 fn main() {
     tracing_subscriber::fmt::init();
